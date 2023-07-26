@@ -1,0 +1,24 @@
+<app-header></app-header>
+<h1 class="title">LISTADO DE PRODUCTOS</h1>
+<div class="container">
+    <table mat-table class="mat-elevation-z8">
+        <ng-container>
+            <thead>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.title}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.description}}</td>
+                </tr>
+            </tbody>
+        </ng-container>
+    </table>
+</div>
+<app-footer></app-footer>
+
